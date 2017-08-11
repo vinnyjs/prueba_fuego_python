@@ -1,9 +1,11 @@
 #Funcion Recursiva que suma elementos de una lista
 def sumaRecursiva(lista):
-    if(len(lista)==0):
+    if(not lista):
         return 0
     else:
         return lista[-1] + sumaRecursiva(lista[0:-1])
+    
+#sumaRecursiva = lambda lista: lista and (lista[-1] + sumaRecursiva(lista[0:-1])) or 0
 
 def sumaFor(lista):
     respuesta = 0
